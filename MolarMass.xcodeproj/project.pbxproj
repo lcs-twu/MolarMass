@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		8185B22F2AF2ACE40067A58B /* MolarMassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B22E2AF2ACE40067A58B /* MolarMassApp.swift */; };
-		8185B2312AF2ACE40067A58B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B2302AF2ACE40067A58B /* ContentView.swift */; };
 		8185B2332AF2ACE60067A58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8185B2322AF2ACE60067A58B /* Assets.xcassets */; };
 		8185B2362AF2ACE60067A58B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8185B2352AF2ACE60067A58B /* Preview Assets.xcassets */; };
+		8185B23E2AF2AD430067A58B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B23D2AF2AD430067A58B /* MainView.swift */; };
+		8185B2422AF2AE390067A58B /* Chemicals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B2412AF2AE390067A58B /* Chemicals.swift */; };
+		8185B2442AF2B08D0067A58B /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B2432AF2B08D0067A58B /* Outcome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8185B22B2AF2ACE40067A58B /* MolarMass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MolarMass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8185B22E2AF2ACE40067A58B /* MolarMassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolarMassApp.swift; sourceTree = "<group>"; };
-		8185B2302AF2ACE40067A58B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8185B2322AF2ACE60067A58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8185B2352AF2ACE60067A58B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8185B23D2AF2AD430067A58B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8185B2412AF2AE390067A58B /* Chemicals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chemicals.swift; sourceTree = "<group>"; };
+		8185B2432AF2B08D0067A58B /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				8185B22E2AF2ACE40067A58B /* MolarMassApp.swift */,
-				8185B2302AF2ACE40067A58B /* ContentView.swift */,
+				8185B2452AF2B1400067A58B /* Helpers */,
+				8185B23C2AF2AD220067A58B /* Views */,
+				8185B2402AF2AE230067A58B /* Models */,
 				8185B2322AF2ACE60067A58B /* Assets.xcassets */,
 				8185B2342AF2ACE60067A58B /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				8185B2352AF2ACE60067A58B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8185B23C2AF2AD220067A58B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8185B23D2AF2AD430067A58B /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8185B2402AF2AE230067A58B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8185B2412AF2AE390067A58B /* Chemicals.swift */,
+				8185B2432AF2B08D0067A58B /* Outcome.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8185B2452AF2B1400067A58B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8185B2312AF2ACE40067A58B /* ContentView.swift in Sources */,
+				8185B2442AF2B08D0067A58B /* Outcome.swift in Sources */,
 				8185B22F2AF2ACE40067A58B /* MolarMassApp.swift in Sources */,
+				8185B23E2AF2AD430067A58B /* MainView.swift in Sources */,
+				8185B2422AF2AE390067A58B /* Chemicals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
