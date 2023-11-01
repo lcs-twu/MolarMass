@@ -6,7 +6,9 @@
 //
 
 import Foundation
-
+//MARK: thoughts on logic
+//MARK: Store as string, press button A return "A"
+//MARK: compare the characters
 enum Outcome: String {
     case notTested = " "
     case correct = "✅"
