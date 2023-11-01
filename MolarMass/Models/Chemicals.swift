@@ -23,10 +23,10 @@ struct Chemicals: Identifiable {
     let word: String
     let molarMass: String
 //    let imageName: String
-    let description: String
+    let chemicalDescription: String
 }
 
 let chemicalsToTest = [
-    Chemicals(word: "Mg(OH)2", molarMass: "Test", description: "Testing"),
-    Chemicals(word: "Ca(OH)2", molarMass: "Test", description: "Testing2")
+    Chemicals(word: "Mg(OH)2", molarMass: "Test", chemicalDescription: "Testing"),
+    Chemicals(word: "Ca(OH)2", molarMass: "Test", chemicalDescription: "Testing2")
 ]
