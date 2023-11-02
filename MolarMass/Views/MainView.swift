@@ -31,15 +31,18 @@ struct MainView: View {
                     //MARK: Remember to change what's showing on the button right now. Change it to A.(Number)
                     //MARK: (Number) should come from the function(replace checkGuess)
                     Button(action: {
+                        let userGuess = "A"
                         print(userGuess)
                         checkGuess()
-                        return userGuess = "A"
+                        print(userGuess)
                     }, label: {
                         Text("A")
                     })
                     .padding(30)
                     
                     Button(action: {
+                        let userGuess = "B"
+                        print(userGuess)
                         checkGuess()
                     }, label: {
                         Text("B")
