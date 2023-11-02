@@ -28,6 +28,6 @@ struct Chemicals: Identifiable {
 }
 
 let chemicalsToTest = [
-    Chemicals(word: "Mg(OH)2", imageName: "replacedLater", chemicalDescription: "Testing", correctAnswer: ""),
-//    Chemicals(word: "Ca(OH)2", molarMass: "Test", chemicalDescription: "Testing2")
+    Chemicals(word: "Mg(OH)2", imageName: "replacedLater", chemicalDescription: "Testing", correctAnswer: "A"),
+//    Chemicals(word: "Ca(OH)2", imageName: "replacedLater", chemicalDescription: "Testing2", correctAnswer: "B")
 ]

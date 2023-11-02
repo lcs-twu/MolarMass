@@ -31,14 +31,16 @@ struct MainView: View {
                     //MARK: Remember to change what's showing on the button right now. Change it to A.(Number)
                     //MARK: (Number) should come from the function(replace checkGuess)
                     Button(action: {
-                        //checkGuess()
+                        print(userGuess)
+                        checkGuess()
+                        return userGuess = "A"
                     }, label: {
                         Text("A")
                     })
                     .padding(30)
                     
                     Button(action: {
-                        //checkGuess()
+                        checkGuess()
                     }, label: {
                         Text("B")
                     })
@@ -46,14 +48,14 @@ struct MainView: View {
                 HStack {
                     //MARK: Remember to make the buttons look better
                     Button(action: {
-                        //checkGuess()
+                        checkGuess()
                     }, label: {
                         Text("C")
                     })
                     .padding(30)
                     
                     Button(action: {
-                        //checkGuess()
+                        checkGuess()
                     }, label: {
                         Text("D")
                     })
@@ -63,7 +65,7 @@ struct MainView: View {
     }
     
     func checkGuess() {
-        if userGuess == currentChemicals.word{
+        if userGuess == currentChemicals.correctAnswer{
             print("correct")
             currentOutcome = .correct
         } else {
