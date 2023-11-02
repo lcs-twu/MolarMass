@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+var currentChemicals = chemicalsToTest.randomElement()!
+
+var userGuess = ""
+
+var currentOutome = Outcome.notTested
+
+var history: [TestedChemicals] = []
+
+var selectedOutcomeFilter: Outcome = .notTested
+
 struct MainView: View {
     var body: some View {
         Text("Testing")

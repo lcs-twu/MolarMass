@@ -22,11 +22,11 @@ struct Chemicals: Identifiable {
     let id = UUID()
     let word: String
     let molarMass: String
-//    let imageName: String
+    let imageName: String
     let chemicalDescription: String
 }
 
 let chemicalsToTest = [
-    Chemicals(word: "Mg(OH)2", molarMass: "Test", chemicalDescription: "Testing"),
-    Chemicals(word: "Ca(OH)2", molarMass: "Test", chemicalDescription: "Testing2")
+    Chemicals(word: "Mg(OH)2", molarMass: "Test", imageName: "replacedLater", chemicalDescription: "Testing"),
+//    Chemicals(word: "Ca(OH)2", molarMass: "Test", chemicalDescription: "Testing2")
 ]
