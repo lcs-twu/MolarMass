@@ -13,7 +13,7 @@ struct MainView: View {
 
     @State var userGuess = ""
 
-    @State var currentOutome = Outcome.notTested
+    @State var currentOutcome = Outcome.notTested
 
     @State var history: [TestedChemicals] = []
 
@@ -61,6 +61,17 @@ struct MainView: View {
             }
         }
     }
+    
+    func checkGuess() {
+        if userGuess == currentChemicals.word{
+            print("correct")
+            currentOutcome = .correct
+        } else {
+            print("wrong")
+            currentOutcome = .incorrect
+        }
+    }
+    
 }
 
 #Preview {
