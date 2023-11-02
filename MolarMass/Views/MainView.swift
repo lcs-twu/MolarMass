@@ -24,10 +24,41 @@ struct MainView: View {
             Image(currentChemicals.imageName)
                 .resizable()
                 .scaledToFit()
-            HStack {
-                //MARK: Change this part to button and select
-                TextField("Enter the name of the item", text: $userGuess)
-                    .padding(.horizontal)
+            VStack {
+                HStack {
+                    //MARK: Buttons with strange spacing
+                    Button(action: {
+                        //newWord()
+                    }, label: {
+                        Text("New word")
+                    })
+                    .padding(30)
+                    
+                    Button(action: {
+                        //newWord()
+                    }, label: {
+                        Text("New word")
+                    })
+                }
+                .padding(40)
+                HStack {
+                    //MARK: Change this part to button and select
+    //                TextField("Enter the name of the item", text: $userGuess)
+    //                    .padding(.horizontal)
+                    
+                    Button(action: {
+                        //newWord()
+                    }, label: {
+                        Text("New word")
+                    })
+                    .padding(30)
+                    
+                    Button(action: {
+                        //newWord()
+                    }, label: {
+                        Text("New word")
+                    })
+                }
             }
         }
     }
