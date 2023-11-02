@@ -7,19 +7,29 @@
 
 import SwiftUI
 
-var currentChemicals = chemicalsToTest.randomElement()!
-
-var userGuess = ""
-
-var currentOutome = Outcome.notTested
-
-var history: [TestedChemicals] = []
-
-var selectedOutcomeFilter: Outcome = .notTested
-
 struct MainView: View {
+    // MARK: Stored properties
+    @State var currentChemicals = chemicalsToTest.randomElement()!
+
+    @State var userGuess = ""
+
+    @State var currentOutome = Outcome.notTested
+
+    @State var history: [TestedChemicals] = []
+
+    @State var selectedOutcomeFilter: Outcome = .notTested
+    //MARK: Computer properties
     var body: some View {
-        Text("Testing")
+        VStack{
+            Image(currentChemicals.imageName)
+                .resizable()
+                .scaledToFit()
+            HStack {
+                //MARK: Change this part to button and select
+                TextField("Enter the name of the item", text: $userGuess)
+                    .padding(.horizontal)
+            }
+        }
     }
 }
 
