@@ -27,36 +27,35 @@ struct MainView: View {
             VStack {
                 HStack {
                     //MARK: Buttons with strange spacing
+                    //MARK: Remember to make the buttons look better
+                    //MARK: Remember to change what's showing on the button right now. Change it to A.(Number)
+                    //MARK: (Number) should come from the function(replace checkGuess)
                     Button(action: {
-                        //newWord()
+                        //checkGuess()
                     }, label: {
-                        Text("New word")
+                        Text("A")
                     })
                     .padding(30)
                     
                     Button(action: {
-                        //newWord()
+                        //checkGuess()
                     }, label: {
-                        Text("New word")
+                        Text("B")
                     })
                 }
-                .padding(40)
                 HStack {
-                    //MARK: Change this part to button and select
-    //                TextField("Enter the name of the item", text: $userGuess)
-    //                    .padding(.horizontal)
-                    
+                    //MARK: Remember to make the buttons look better
                     Button(action: {
-                        //newWord()
+                        //checkGuess()
                     }, label: {
-                        Text("New word")
+                        Text("C")
                     })
                     .padding(30)
                     
                     Button(action: {
-                        //newWord()
+                        //checkGuess()
                     }, label: {
-                        Text("New word")
+                        Text("D")
                     })
                 }
             }
