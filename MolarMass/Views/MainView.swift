@@ -30,17 +30,17 @@ struct MainView: View {
             
             VStack {
                 HStack {
-                    //MARK: Buttons with strange spacing
                     //MARK: Remember to make the buttons look better
-                    //MARK: Remember to change what's showing on the button right now. Change it to A.(Number)
-                    // NOTE: Code from lines 33 to 40 were generated using ChatGPT.
+                    // NOTE: Code at line 36 is generated using ChatGPT.
                     Button(action: {
                         let userGuessA = "A"
                         userGuess = userGuessA
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerA)
+                            .font(.title2)
                     })
+                    .buttonStyle(.borderedProminent)
                     .padding(30)
                     
                     Button(action: {
@@ -49,7 +49,9 @@ struct MainView: View {
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerB)
+                            .font(.title2)
                     })
+                    .buttonStyle(.borderedProminent)
                     .padding(30)
                 }
                 HStack {
@@ -60,7 +62,9 @@ struct MainView: View {
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerC)
+                            .font(.title2)
                     })
+                    .buttonStyle(.borderedProminent)
                     .padding(30)
                     
                     Button(action: {
@@ -69,7 +73,9 @@ struct MainView: View {
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerD)
+                            .font(.title2)
                     })
+                    .buttonStyle(.borderedProminent)
                     .padding(30)
                 }
             }
