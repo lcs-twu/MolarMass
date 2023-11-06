@@ -24,6 +24,10 @@ struct MainView: View {
             Image(currentChemicals.imageName)
                 .resizable()
                 .scaledToFit()
+            
+            Text(currentChemicals.chemicalDescription)
+                .padding(20)
+            
             VStack {
                 HStack {
                     //MARK: Buttons with strange spacing
@@ -36,7 +40,7 @@ struct MainView: View {
                         checkGuess()
                         print(userGuess)
                     }, label: {
-                        Text("A")
+                        Text(currentChemicals.AnswerA)
                     })
                     .padding(30)
                     
@@ -46,8 +50,9 @@ struct MainView: View {
                         print(userGuess)
                         checkGuess()
                     }, label: {
-                        Text("B")
+                        Text(currentChemicals.AnswerB)
                     })
+                    .padding(30)
                 }
                 HStack {
                     //MARK: Remember to make the buttons look better
@@ -57,7 +62,7 @@ struct MainView: View {
                         print(userGuess)
                         checkGuess()
                     }, label: {
-                        Text("C")
+                        Text(currentChemicals.AnswerC)
                     })
                     .padding(30)
                     
@@ -67,8 +72,9 @@ struct MainView: View {
                         print(userGuess)
                         checkGuess()
                     }, label: {
-                        Text("D")
+                        Text(currentChemicals.AnswerD)
                     })
+                    .padding(30)
                 }
             }
         }
