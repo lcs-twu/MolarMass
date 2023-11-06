@@ -11,7 +11,7 @@ struct MainView: View {
     // MARK: Stored properties
     @State var currentChemicals = chemicalsToTest.randomElement()!
 
-    @State var userGuess = ""
+    @State private var userGuess = ""
 
     @State var currentOutcome = Outcome.notTested
 
@@ -29,10 +29,10 @@ struct MainView: View {
                     //MARK: Buttons with strange spacing
                     //MARK: Remember to make the buttons look better
                     //MARK: Remember to change what's showing on the button right now. Change it to A.(Number)
-                    //MARK: (Number) should come from the function(replace checkGuess)
+                    // NOTE: Code from lines 33 to 40 were generated using ChatGPT.
                     Button(action: {
-                        let userGuess = "A"
-                        print(userGuess)
+                        let userGuessA = "A"
+                        userGuess = userGuessA
                         checkGuess()
                         print(userGuess)
                     }, label: {
@@ -41,7 +41,8 @@ struct MainView: View {
                     .padding(30)
                     
                     Button(action: {
-                        let userGuess = "B"
+                        let userGuessB = "B"
+                        userGuess = userGuessB
                         print(userGuess)
                         checkGuess()
                     }, label: {
@@ -51,6 +52,9 @@ struct MainView: View {
                 HStack {
                     //MARK: Remember to make the buttons look better
                     Button(action: {
+                        let userGuessC = "C"
+                        userGuess = userGuessC
+                        print(userGuess)
                         checkGuess()
                     }, label: {
                         Text("C")
@@ -58,6 +62,9 @@ struct MainView: View {
                     .padding(30)
                     
                     Button(action: {
+                        let userGuessD = "D"
+                        userGuess = userGuessD
+                        print(userGuess)
                         checkGuess()
                     }, label: {
                         Text("D")
