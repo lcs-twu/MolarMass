@@ -38,7 +38,6 @@ struct MainView: View {
                         let userGuessA = "A"
                         userGuess = userGuessA
                         checkGuess()
-                        print(userGuess)
                     }, label: {
                         Text(currentChemicals.AnswerA)
                     })
@@ -47,7 +46,6 @@ struct MainView: View {
                     Button(action: {
                         let userGuessB = "B"
                         userGuess = userGuessB
-                        print(userGuess)
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerB)
@@ -59,7 +57,6 @@ struct MainView: View {
                     Button(action: {
                         let userGuessC = "C"
                         userGuess = userGuessC
-                        print(userGuess)
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerC)
@@ -69,7 +66,6 @@ struct MainView: View {
                     Button(action: {
                         let userGuessD = "D"
                         userGuess = userGuessD
-                        print(userGuess)
                         checkGuess()
                     }, label: {
                         Text(currentChemicals.AnswerD)
