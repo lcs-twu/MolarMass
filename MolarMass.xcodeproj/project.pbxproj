@@ -56,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				8185B22E2AF2ACE40067A58B /* MolarMassApp.swift */,
-				8185B2452AF2B1400067A58B /* Helpers */,
 				8185B23C2AF2AD220067A58B /* Views */,
 				8185B2402AF2AE230067A58B /* Models */,
 				8185B2322AF2ACE60067A58B /* Assets.xcassets */,
@@ -88,13 +87,6 @@
 				8185B2432AF2B08D0067A58B /* Outcome.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		8185B2452AF2B1400067A58B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

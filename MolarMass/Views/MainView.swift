@@ -92,6 +92,14 @@ struct MainView: View {
         }
     }
     
+    func newChemicals() {
+        history.insert(TestedChemicals(chemicals: currentChemicals, optionSelected: userGuess, outcome: currentOutcome), at: 0)
+        print(history)
+        //reset
+        currentChemicals = chemicalsToTest.randomElement()!
+        
+    }
+    
 }
 
 #Preview {
