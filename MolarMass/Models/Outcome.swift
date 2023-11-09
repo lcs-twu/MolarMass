@@ -10,7 +10,7 @@ import Foundation
 //MARK: Store as string, press button A return "A"
 //MARK: compare the characters
 enum Outcome: String {
-    case notTested = " "
+    case Tested = " "
     case correct = "✅"
     case incorrect = "❎"
 }

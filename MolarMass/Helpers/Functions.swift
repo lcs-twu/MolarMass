@@ -8,13 +8,13 @@
 import Foundation
 
 func filtering(originalList: [TestedChemicals], on desiredOutcome: Outcome) -> [TestedChemicals] {
-    if desiredOutcome == .notTested {
+    if desiredOutcome == .Tested {
         return originalList
     }
     
     var filteredResults: [TestedChemicals] = []
     
-    for result in filteredResults {
+    for result in originalList {
         if result.outcome == desiredOutcome {
             filteredResults.append(result)
         }

@@ -13,11 +13,11 @@ struct MainView: View {
 
     @State private var userGuess = ""
 
-    @State var currentOutcome = Outcome.notTested
+    @State var currentOutcome = Outcome.Tested
 
     @State var history: [TestedChemicals] = []
 
-    @State var selectedOutcomeFilter: Outcome = .notTested
+    @State var selectedOutcomeFilter: Outcome = .Tested
     //MARK: Computer properties
     var body: some View {
         HStack {
@@ -95,11 +95,38 @@ struct MainView: View {
             VStack{
                 Picker("Filtering on", selection: $selectedOutcomeFilter){
                     //what shows in UI and what goes in property
-                    Text("Not tested chemicals").tag(Outcome.notTested)
+                    Text("Tested chemicals").tag(Outcome.Tested)
                     Text("Correct").tag(Outcome.correct)
                     Text("Incorrect").tag(Outcome.incorrect)
                 }
                 .padding()
+                
+                List(filtering(originalList: history, on: selectedOutcomeFilter)){
+                    currentResult in 
+                    HStack {
+                        Image(
+                            currentResult.chemicals.imageName
+                        )
+                        .resizable()
+                        .scaledToFit()
+                        .frame(
+                            width: 50
+                        )
+                        Text(currentResult.optionSelected)
+                        Text(currentResult.chemicals.chemicalDescription)
+                        Text(currentResult.chemicals.correctAnswer)
+                        HStack{
+                            Text(currentResult.chemicals.AnswerA)
+                            Text(currentResult.chemicals.AnswerB)
+                            Text(currentResult.chemicals.AnswerC)
+                            Text(currentResult.chemicals.AnswerD)
+                        }
+                        Spacer()
+                        Text(
+                            currentResult.outcome.rawValue
+                        )
+                    }
+                }
             }
         }
     }
@@ -120,7 +147,7 @@ struct MainView: View {
         //reset
         currentChemicals = chemicalsToTest.randomElement()!
         userGuess = ""
-        currentOutcome = .notTested
+        currentOutcome = .Tested
     }
     
 }
