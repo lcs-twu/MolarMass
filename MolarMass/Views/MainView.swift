@@ -95,7 +95,7 @@ struct MainView: View {
             VStack{
                 Picker("Filtering on", selection: $selectedOutcomeFilter){
                     //what shows in UI and what goes in property
-                    Text("Not tested results").tag(Outcome.notTested)
+                    Text("Not tested chemicals").tag(Outcome.notTested)
                     Text("Correct").tag(Outcome.correct)
                     Text("Incorrect").tag(Outcome.incorrect)
                 }

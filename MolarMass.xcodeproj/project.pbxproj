@@ -13,6 +13,7 @@
 		8185B23E2AF2AD430067A58B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B23D2AF2AD430067A58B /* MainView.swift */; };
 		8185B2422AF2AE390067A58B /* Chemicals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B2412AF2AE390067A58B /* Chemicals.swift */; };
 		8185B2442AF2B08D0067A58B /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185B2432AF2B08D0067A58B /* Outcome.swift */; };
+		81B3B1842AFC944D0001C02E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B3B1832AFC944D0001C02E /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8185B23D2AF2AD430067A58B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8185B2412AF2AE390067A58B /* Chemicals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chemicals.swift; sourceTree = "<group>"; };
 		8185B2432AF2B08D0067A58B /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		81B3B1832AFC944D0001C02E /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				8185B22E2AF2ACE40067A58B /* MolarMassApp.swift */,
+				81B3B1822AFC942C0001C02E /* Helpers */,
 				8185B23C2AF2AD220067A58B /* Views */,
 				8185B2402AF2AE230067A58B /* Models */,
 				8185B2322AF2ACE60067A58B /* Assets.xcassets */,
@@ -87,6 +90,14 @@
 				8185B2432AF2B08D0067A58B /* Outcome.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		81B3B1822AFC942C0001C02E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81B3B1832AFC944D0001C02E /* Functions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				8185B2442AF2B08D0067A58B /* Outcome.swift in Sources */,
 				8185B22F2AF2ACE40067A58B /* MolarMassApp.swift in Sources */,
 				8185B23E2AF2AD430067A58B /* MainView.swift in Sources */,
+				81B3B1842AFC944D0001C02E /* Functions.swift in Sources */,
 				8185B2422AF2AE390067A58B /* Chemicals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
