@@ -33,5 +33,8 @@ struct Chemicals: Identifiable {
 
 let chemicalsToTest = [
     Chemicals(word: "Mg(OH)2", imageName: "replacedLater", chemicalDescription: "Testing", correctAnswer: "A", AnswerA: "A. 58.3197", AnswerB: "B. 56.3197", AnswerC: "C. 55.3197", AnswerD: "D. 60.3197"),
-    Chemicals(word: "Ca(OH)2", imageName: "replacedLater2", chemicalDescription: "Testing2", correctAnswer: "B", AnswerA: "A. 73.093", AnswerB: "B. 74.093", AnswerC: "C. 78.093", AnswerD: "D. 70.093")
+    Chemicals(word: "Ca(OH)2", imageName: "replacedLater2", chemicalDescription: "Testing2", correctAnswer: "B", AnswerA: "A. 73.093", AnswerB: "B. 74.093", AnswerC: "C. 78.093", AnswerD: "D. 70.093"),
+    Chemicals(word: "NaCl", imageName: "replacedLater3", chemicalDescription: "Testing3", correctAnswer: "A", AnswerA: "A. 58.44", AnswerB: "B. 59.44", AnswerC: "C. 50.44", AnswerD: "D. 51.44"),
+    Chemicals(word: "Fe2O3", imageName: "replacedLater4", chemicalDescription: "Testing4", correctAnswer: "D", AnswerA: "A. 154.69", AnswerB: "B. 150.69", AnswerC: "C. 158.69", AnswerD: "D. 159.69"),
+    Chemicals(word: "H2O", imageName: "replacedLater5", chemicalDescription: "Testing5", correctAnswer: "C", AnswerA: "A. 22.0125", AnswerB: "B. 20.0125", AnswerC: "C. 18.0125", AnswerD: "D. 19.0125")
 ]
